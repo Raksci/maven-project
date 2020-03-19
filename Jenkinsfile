@@ -27,7 +27,7 @@ podTemplate(label: label, containers: [
                     sh """
                         docker login -u ${DOCKER_HUB_USER} -p ${DOCKER_HUB_PASSWORD}
                         docker build -t raksci/webapp:${BUILD_NUMBER} .
-                        docker push raKsci/webapp:${BUILD_NUMBER}
+                        docker push raksci/webapp:${BUILD_NUMBER}
                         """
                     }
             }
